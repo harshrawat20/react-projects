@@ -36,6 +36,7 @@ export default function TextForm(props) {
         var text=document.getElementById("myBox");
         text.select();
         navigator.clipboard.writeText(text.value);
+        document.getSelection().removeAllRanges();
         props.showAlert("Copied to clipboard!","success");
     }
     const handleExtraSpaces=()=>{
@@ -52,12 +53,12 @@ export default function TextForm(props) {
 <div className="mb-3">
 <textarea className="form-control" value={text} style={{backgroundColor:props.mode==='dark' ? '#1a1919' : 'white',color:props.mode==='dark' ? 'white' : 'black',opacity:1}} onChange={handleOnChange} placeholder="Enter text here" id="myBox" rows="8"></textarea>
 </div>
-<button className="btn btn-primary mx-1" onClick={handleUpclick}>Convert to Uppercase</button>
-<button className="btn btn-primary mx-1" onClick={handleLoclick}>Convert to Lowercase</button>
-<button className="btn btn-primary mx-1" onClick={replaceword}>Replace word</button>
-<button className="btn btn-primary mx-1" onClick={handleCopy}>Copy Text</button>
-<button className="btn btn-primary mx-1" onClick={handleExtraSpaces}>Remove Extra spaces</button>
-<button className="btn btn-primary mx-1" onClick={handleClclick}>Clear Text</button>
+<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleUpclick}>Convert to Uppercase</button>
+<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleLoclick}>Convert to Lowercase</button>
+<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={replaceword}>Replace word</button>
+<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleCopy}>Copy Text</button>
+<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleExtraSpaces}>Remove Extra spaces</button>
+<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleClclick}>Clear Text</button>
 </div>
 {text && <div className="container my-3" style={{color:props.mode==='dark' ? 'white' : 'black'}} >
     <h2>Your text summary</h2>
