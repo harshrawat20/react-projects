@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-projects/tree/main/textutils/static/css/main.abd64e84.css",
-    "main.js": "/react-projects/tree/main/textutils/static/js/main.215ea3ca.js",
-    "static/js/787.719ec76d.chunk.js": "/react-projects/tree/main/textutils/static/js/787.719ec76d.chunk.js",
-    "index.html": "/react-projects/tree/main/textutils/index.html",
-    "main.abd64e84.css.map": "/react-projects/tree/main/textutils/static/css/main.abd64e84.css.map",
-    "main.215ea3ca.js.map": "/react-projects/tree/main/textutils/static/js/main.215ea3ca.js.map",
-    "787.719ec76d.chunk.js.map": "/react-projects/tree/main/textutils/static/js/787.719ec76d.chunk.js.map"
+    "main.css": "/react-projects/static/css/main.abd64e84.css",
+    "main.js": "/react-projects/static/js/main.2ec1d228.js",
+    "static/js/787.719ec76d.chunk.js": "/react-projects/static/js/787.719ec76d.chunk.js",
+    "index.html": "/react-projects/index.html",
+    "main.abd64e84.css.map": "/react-projects/static/css/main.abd64e84.css.map",
+    "main.2ec1d228.js.map": "/react-projects/static/js/main.2ec1d228.js.map",
+    "787.719ec76d.chunk.js.map": "/react-projects/static/js/787.719ec76d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.abd64e84.css",
-    "static/js/main.215ea3ca.js"
+    "static/js/main.2ec1d228.js"
   ]
 }
